@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="style_modal.css">
+</head>
+<body>
+    <ul class="images">
+        <li><button id="button" class="button_img" data-modal="modal" data-modal1="modal1" data-modal2="modal2"><img src="img/ferrari-small.jpg" alt="small ferrari" width="137" height="90"></button></li>
+        <li><button id="button1" class="button_img" data-modal="modal1" data-modal1="modal" data-modal2="modal2"><img src="img/lambo%20-%20small.jpg" alt="small lambo" width="137" height="90"></button></li>
+        <li><button id="button2" class="button_img" data-modal="modal2" data-modal1="modal" data-modal2="modal1"><img src="img/porsche%20-%20small.jpg" alt="small porsche" width="137" height="90"></button></li>
+    </ul>
+    <div id="modal" class="modal_img">
+        <div class="modal_content">
+            <button id="x_close" class="close" data-modal="modal">&times;</button>
+            <img src="img/ferrari-big.jpg" alt="big picture" width="800" height="535">
+            <button class="next" data-modal="modal1" data-modal1="modal">&gt;</button>
+            <button class="back" data-modal="modal2" data-modal1="modal">&lt;</button>
+        </div>
+    </div>
+    <div id="modal1" class="modal_img">
+        <div class="modal_content">
+            <button id="x_close1" class="close" data-modal="modal1">&times;</button>
+            <img src="img/lambo-big.jpg" alt="big picture" width="800" height="535">
+            <button class="next" data-modal="modal2" data-modal1="modal1">&gt;</button>
+            <button class="back" data-modal="modal" data-modal1="modal1">&lt;</button>
+        </div>
+    </div>
+    <div id="modal2" class="modal_img">
+        <div class="modal_content">
+            <button id="x_close2" class="close" data-modal="modal2">&times;</button>
+            <img src="img/porsche-big.jpg" alt="big picture" width="800" height="535">
+            <button class="next" data-modal="modal" data-modal1="modal2">&gt;</button>
+            <button class="back" data-modal="modal1" data-modal1="modal2">&lt;</button>
+        </div>
+    </div>
+    <script src="HW6_modal_task2.js"></script>
+</body>
+</html>
