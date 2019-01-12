@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button_img{
+    outline: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal_img{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 150px;
+    top: 100px;
+    overflow: auto;
+    background: rgba(0,0,0,0);
+}
+
+.close, .next, .back{
+    font-weight: 700;
+    font-size: 50px;
+    border: none;
+    background: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.close{
+    position: relative;
+    bottom: 500px;
+    left: 830px;
+}
+
+.next, .back{
+    position: relative;
+    right: 65px;
+    color: #078c00;
+    font-size: 100px;
+    bottom: 270px;
+}
+
+.back{
+    right: 865px;
+}
+
+
+.images{
+    display: flex;
+    list-style-type: none;
+}
